@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qYQ-12-JRN">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--★ Endless Reminder ★-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EndlessReminder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="rih-DI-tx2">
+                                <rect key="frame" x="0.0" y="138" width="414" height="522"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⌛ ⇨ ⓖⓞⓐⓛ ⇦" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0zO-q5-Jvi">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="42"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.1744295359406598" green="1" blue="0.31394748697437536" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4ey-8s-0zz">
+                                <rect key="frame" x="255" y="802.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.8471938597521409" green="0.98177711693508174" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8Ln-J9-qEl">
+                                <rect key="frame" x="0.0" y="802.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Tye-Pc-Mdb">
+                                <rect key="frame" x="86" y="801.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Mpg-pi-zge">
+                                <rect key="frame" x="173" y="800.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="HGV-jP-gXR">
+                                <rect key="frame" x="336" y="801.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="rih-DI-tx2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="AwP-cr-973"/>
+                            <constraint firstItem="rih-DI-tx2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Eap-Qc-EhA"/>
+                            <constraint firstItem="rih-DI-tx2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="LdO-bO-RV9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rih-DI-tx2" secondAttribute="bottom" id="V17-Wv-l8N"/>
+                            <constraint firstItem="rih-DI-tx2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="Vsv-hp-L6X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rih-DI-tx2" secondAttribute="bottom" constant="500" id="guy-PL-k7z"/>
+                            <constraint firstItem="rih-DI-tx2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="h7E-QD-9uI"/>
+                            <constraint firstItem="rih-DI-tx2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qdp-9u-U3m"/>
+                            <constraint firstItem="rih-DI-tx2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="250" id="sb4-IR-dU6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rih-DI-tx2" secondAttribute="trailing" id="xGb-ep-Hcm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="★ Endless Reminder ★" id="gas-Bq-kj7">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="YYS-8k-nIU"/>
+                        <barButtonItem key="leftBarButtonItem" image="plus.message.fill" catalog="system" id="1E8-jE-oaB">
+                            <color key="tintColor" systemColor="systemBackgroundColor"/>
+                            <connections>
+                                <action selector="confirmNewReminderTaskFunction" destination="BYZ-38-t0r" id="UAe-JB-hDC"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="wand.and.stars" catalog="system" id="mdK-gM-e2x">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="magicWand" destination="BYZ-38-t0r" id="XNo-jo-fcK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="reminderTaskTable" destination="rih-DI-tx2" id="JzA-SN-Ztb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="713.04347826086962" y="93.75"/>
+        </scene>
+        <!--Magic Wand View Controller-->
+        <scene sceneID="Vhg-zx-T5c">
+            <objects>
+                <viewController storyboardIdentifier="wand" id="mle-Pd-XBC" customClass="magicWandViewController" customModule="EndlessReminder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eL4-kH-tG1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="► ♥ Goal ♥ ◄" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C7w-4J-qKI">
+                                <rect key="frame" x="0.0" y="33" width="414" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="🌈 ☁ ARE YOU STILL DREAMING?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8G-ua-pYP">
+                                <rect key="frame" x="0.0" y="718" width="414" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="🤔 WHY GIVE UP NOW? 🤔" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8nO-ys-Trz">
+                                <rect key="frame" x="-2" y="744" width="414" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  🔔 DO YOU NEED A REMINDER? 🔔" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bcu-rB-Pib">
+                                <rect key="frame" x="0.0" y="88" width="403" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCW-st-X4z">
+                                <rect key="frame" x="9" y="380" width="374" height="339"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <string key="text">⭐#1 Get 7-8 Hours of Sleep Minimum! ⭐#2 Drink More Than 1000 ML of Water A Day! ⭐#3 Get 30 Minutes Execise Each Day! ⭐#4 Listen to Relax, Chill or Meditation Music to Calm Yourself! ⭐#5 Remind yourself of a goal!</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ijg-JY-2cn">
+                                <rect key="frame" x="205" y="834" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter Here" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h0N-Sy-2b4">
+                                <rect key="frame" x="18" y="193" width="354" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q47-hw-tNZ">
+                                <rect key="frame" x="21" y="253" width="177" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GOAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRi-Qc-0yu">
+                                <rect key="frame" x="20" y="171" width="372" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SLEEP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXc-pY-pUO">
+                                <rect key="frame" x="18" y="227" width="374" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="8" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pid-Hd-qaV">
+                                <rect key="frame" x="214" y="253" width="158" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You got too little sleep!" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9o-VW-Hpl">
+                                <rect key="frame" x="21" y="295" width="351" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Q6P-t2-MOJ"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="goalTextField" destination="h0N-Sy-2b4" id="JJv-ad-9qj"/>
+                        <outlet property="reminderLabel" destination="iCW-st-X4z" id="eKM-XZ-ej8"/>
+                        <outlet property="sleepLabel" destination="O9o-VW-Hpl" id="Opb-cs-ji0"/>
+                        <outlet property="sleepTextField" destination="Q47-hw-tNZ" id="cQB-8z-oTf"/>
+                        <outlet property="sleepTextField2" destination="pid-Hd-qaV" id="ZBQ-2g-eMm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZOf-Ww-nqU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1592.753623188406" y="-604.01785714285711"/>
+        </scene>
+        <!--Input View Controller-->
+        <scene sceneID="DY3-x3-dtx">
+            <objects>
+                <viewController storyboardIdentifier="input" id="yA2-IZ-s73" customClass="inputViewController" customModule="EndlessReminder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ma1-O0-nC3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your reminder here!" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IKn-EU-UFV">
+                                <rect key="frame" x="0.0" y="44" width="414" height="103"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" playsSound="YES" keyboardKey="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="364" id="5gN-AC-qIS"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="350" id="75R-Fg-bed"/>
+                                    <constraint firstAttribute="height" constant="103" id="ZNt-pS-xl1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <imageReference key="background" image="square.and.pencil" catalog="system" symbolScale="medium"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="bottom" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="A3B-am-gV6">
+                                <rect key="frame" x="-12" y="152" width="414" height="357"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="HYI-RR-hAP"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="fmI-Ax-QAa"/>
+                                    <constraint firstAttribute="height" constant="300" id="zjX-GM-IWA"/>
+                                </constraints>
+                            </datePicker>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HpW-qx-igm">
+                                <rect key="frame" x="0.0" y="454" width="414" height="349"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cursorarrow.click.2" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Re1-PF-2Er">
+                                <rect key="frame" x="0.0" y="223" width="414" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <color key="tintColor" red="1" green="0.96432346170000005" blue="0.34585402329999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Click Below, Pick Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjd-Jn-zCX">
+                                <rect key="frame" x="0.0" y="143" width="414" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="KpW-LC-YO8">
+                                <rect key="frame" x="0.0" y="787.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="19K-HQ-kiT">
+                                <rect key="frame" x="43" y="709.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="OvI-Yz-REN">
+                                <rect key="frame" x="-43" y="710.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="KGj-xt-sP7">
+                                <rect key="frame" x="128" y="708.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="NZF-LM-w4A">
+                                <rect key="frame" x="215" y="709.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="r8y-wY-tOF">
+                                <rect key="frame" x="298" y="711.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6Jp-oK-VHS">
+                                <rect key="frame" x="0.0" y="401.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="3Nh-ao-c5v">
+                                <rect key="frame" x="-43" y="326.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jd2-uc-Prx">
+                                <rect key="frame" x="-43" y="230.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="3rX-s1-bav">
+                                <rect key="frame" x="-43" y="136.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="UlL-bG-P9h">
+                                <rect key="frame" x="-43" y="476.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="pja-P4-B0Z">
+                                <rect key="frame" x="-51" y="562.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="1zM-6r-gpr">
+                                <rect key="frame" x="-43" y="631.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="mRX-Pw-bq7">
+                                <rect key="frame" x="370" y="475.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="s8Z-Mb-FF0">
+                                <rect key="frame" x="362" y="563.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hnZ-Eg-ai8">
+                                <rect key="frame" x="370" y="643.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="OdO-BM-PvO">
+                                <rect key="frame" x="318" y="401.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Nv5-oQ-Q2l">
+                                <rect key="frame" x="83" y="402.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lgk-3Q-UAK">
+                                <rect key="frame" x="-21" y="53.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="x7M-k2-sKx">
+                                <rect key="frame" x="362" y="335.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7XS-Gh-QN4">
+                                <rect key="frame" x="370" y="253.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="cGm-Y9-5UQ">
+                                <rect key="frame" x="233" y="403.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="M89-Yr-7H2">
+                                <rect key="frame" x="362" y="176.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="MMZ-D0-vRO">
+                                <rect key="frame" x="382" y="712.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="VUG-oK-bVg">
+                                <rect key="frame" x="83" y="786.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="SRc-og-Mgg">
+                                <rect key="frame" x="169" y="785.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="WGG-eZ-Fjk">
+                                <rect key="frame" x="252" y="788.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="qkD-sv-tIt">
+                                <rect key="frame" x="337" y="789.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="VWE-Bu-S11">
+                                <rect key="frame" x="159" y="403.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="9yP-99-EL9">
+                                <rect key="frame" x="354" y="10.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="995-Js-3Jd">
+                                <rect key="frame" x="354" y="91.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="9ch-R4-dOX">
+                                <rect key="frame" x="-12" y="-14.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="43P-Dr-Otx"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="IKn-EU-UFV" firstAttribute="top" secondItem="43P-Dr-Otx" secondAttribute="top" constant="15" id="0Pb-lP-o64"/>
+                            <constraint firstItem="A3B-am-gV6" firstAttribute="top" secondItem="IKn-EU-UFV" secondAttribute="bottom" constant="5" id="4Mw-3u-GIs"/>
+                            <constraint firstItem="A3B-am-gV6" firstAttribute="top" secondItem="IKn-EU-UFV" secondAttribute="bottom" constant="50" id="4YS-Fx-6XE"/>
+                            <constraint firstItem="43P-Dr-Otx" firstAttribute="bottom" secondItem="A3B-am-gV6" secondAttribute="bottom" constant="500" id="8I2-Z3-990"/>
+                            <constraint firstItem="A3B-am-gV6" firstAttribute="top" secondItem="IKn-EU-UFV" secondAttribute="bottom" constant="5" id="8oU-3E-ua0"/>
+                            <constraint firstItem="A3B-am-gV6" firstAttribute="leading" secondItem="43P-Dr-Otx" secondAttribute="leading" constant="5" id="9ve-WZ-ugD"/>
+                            <constraint firstAttribute="trailing" secondItem="A3B-am-gV6" secondAttribute="trailing" constant="5" id="9yD-2w-kGm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="A3B-am-gV6" secondAttribute="trailing" id="BFJ-yJ-hYF"/>
+                            <constraint firstItem="43P-Dr-Otx" firstAttribute="trailing" secondItem="IKn-EU-UFV" secondAttribute="trailing" constant="25" id="CPJ-Gp-0VW"/>
+                            <constraint firstItem="A3B-am-gV6" firstAttribute="top" secondItem="IKn-EU-UFV" secondAttribute="bottom" constant="50" id="Cgg-Jr-OwG"/>
+                            <constraint firstItem="A3B-am-gV6" firstAttribute="trailing" secondItem="43P-Dr-Otx" secondAttribute="trailing" constant="5" id="ETb-1L-nxA"/>
+                            <constraint firstItem="IKn-EU-UFV" firstAttribute="leading" secondItem="43P-Dr-Otx" secondAttribute="leading" constant="25" id="Edk-ud-vPI"/>
+                            <constraint firstItem="A3B-am-gV6" firstAttribute="leading" secondItem="43P-Dr-Otx" secondAttribute="leading" id="JEM-lY-YAK"/>
+                            <constraint firstItem="A3B-am-gV6" firstAttribute="leading" secondItem="43P-Dr-Otx" secondAttribute="leading" id="NWz-wt-NvI"/>
+                            <constraint firstItem="A3B-am-gV6" firstAttribute="top" secondItem="IKn-EU-UFV" secondAttribute="bottom" constant="50" id="XaQ-Mz-4gg"/>
+                            <constraint firstItem="43P-Dr-Otx" firstAttribute="trailing" secondItem="IKn-EU-UFV" secondAttribute="trailing" id="YMG-oF-3bf"/>
+                            <constraint firstItem="43P-Dr-Otx" firstAttribute="trailing" secondItem="IKn-EU-UFV" secondAttribute="trailing" constant="25" id="Ydr-Jp-6WH"/>
+                            <constraint firstItem="43P-Dr-Otx" firstAttribute="trailing" secondItem="A3B-am-gV6" secondAttribute="trailing" id="ZHc-nD-VRc"/>
+                            <constraint firstItem="A3B-am-gV6" firstAttribute="top" secondItem="IKn-EU-UFV" secondAttribute="bottom" constant="700" id="dqd-SV-yFZ"/>
+                            <constraint firstItem="43P-Dr-Otx" firstAttribute="bottom" secondItem="A3B-am-gV6" secondAttribute="bottom" constant="5" id="gH6-vt-eqO"/>
+                            <constraint firstItem="43P-Dr-Otx" firstAttribute="bottom" secondItem="A3B-am-gV6" secondAttribute="bottom" id="lO5-gR-MCV"/>
+                            <constraint firstItem="IKn-EU-UFV" firstAttribute="leading" secondItem="43P-Dr-Otx" secondAttribute="leading" id="lmS-Ka-n5F"/>
+                            <constraint firstItem="A3B-am-gV6" firstAttribute="top" secondItem="IKn-EU-UFV" secondAttribute="bottom" id="paB-sd-bE7"/>
+                            <constraint firstItem="A3B-am-gV6" firstAttribute="trailing" secondItem="43P-Dr-Otx" secondAttribute="trailing" constant="5" id="poa-0P-s6i"/>
+                            <constraint firstItem="IKn-EU-UFV" firstAttribute="top" secondItem="43P-Dr-Otx" secondAttribute="top" constant="15" id="s7Q-Vd-g6n"/>
+                            <constraint firstItem="IKn-EU-UFV" firstAttribute="top" secondItem="43P-Dr-Otx" secondAttribute="top" id="w5u-Yi-Kym"/>
+                            <constraint firstItem="43P-Dr-Otx" firstAttribute="bottom" secondItem="A3B-am-gV6" secondAttribute="bottom" id="wOM-oe-AzU"/>
+                            <constraint firstItem="IKn-EU-UFV" firstAttribute="leading" secondItem="43P-Dr-Otx" secondAttribute="leading" constant="25" id="wt5-Bd-5J8"/>
+                            <constraint firstItem="43P-Dr-Otx" firstAttribute="bottom" secondItem="IKn-EU-UFV" secondAttribute="bottom" constant="700" id="ytE-OP-rTa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="reminderDatePicker" destination="A3B-am-gV6" id="6Vv-sq-BJ6"/>
+                        <outlet property="reminderImageView" destination="HpW-qx-igm" id="3no-zG-wwA"/>
+                        <outlet property="reminderTextField" destination="IKn-EU-UFV" id="WO8-d1-w7K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gh1-6r-8Bw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1592.753623188406" y="93.75"/>
+        </scene>
+        <!--Remove Input View Controller-->
+        <scene sceneID="ZYR-Lg-Zkk">
+            <objects>
+                <viewController storyboardIdentifier="remove" id="y1m-aj-ob1" customClass="removeInputViewController" customModule="EndlessReminder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p2R-wy-2WP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Info" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfL-PL-TmH">
+                                <rect key="frame" x="0.0" y="44" width="414" height="84"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="300" id="qVI-Xg-kJu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E7D-Hi-JWw">
+                                <rect key="frame" x="0.0" y="363" width="414" height="438"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="vOH-cN-Eqg">
+                                <rect key="frame" x="0.0" y="782.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7dN-RQ-sIc">
+                                <rect key="frame" x="41" y="707.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="j4K-Vf-RKM">
+                                <rect key="frame" x="124" y="707.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zWF-nf-B8Y">
+                                <rect key="frame" x="207" y="705.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fs0-TZ-tJO">
+                                <rect key="frame" x="290" y="707.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="o3k-1Y-s4x">
+                                <rect key="frame" x="375" y="708.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="K9H-h9-GrE">
+                                <rect key="frame" x="-39" y="706.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="0i0-4O-pYu">
+                                <rect key="frame" x="0.0" y="637.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Q63-3v-SGS">
+                                <rect key="frame" x="81" y="637.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wV3-cz-wVd">
+                                <rect key="frame" x="164" y="636.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gNI-x3-1p4">
+                                <rect key="frame" x="247" y="635.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="nR1-GY-fe8">
+                                <rect key="frame" x="329" y="638.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="uMg-V9-IPD">
+                                <rect key="frame" x="164" y="783.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jCV-e4-NpH">
+                                <rect key="frame" x="247" y="784.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="TVZ-U2-75a">
+                                <rect key="frame" x="329" y="785.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="cQ0-d2-CIk">
+                                <rect key="frame" x="-46" y="175.5" width="21" height="93"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Jxa-fb-rEj">
+                                <rect key="frame" x="-50" y="595.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="pKJ-e7-qar">
+                                <rect key="frame" x="361" y="608.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bBy-pX-DNB">
+                                <rect key="frame" x="439" y="58.5" width="21" height="93"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cube.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="pcf-7B-o1R">
+                                <rect key="frame" x="81" y="785.5" width="96" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84719385979999995" green="0.98177711690000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pcu-cc-FVh">
+                                <rect key="frame" x="0.0" y="308" width="414" height="89"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="SO8-LS-w4A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mId-8L-hKj"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="Pcu-cc-FVh" firstAttribute="leading" secondItem="mId-8L-hKj" secondAttribute="leading" constant="25" id="2L1-SW-unG"/>
+                            <constraint firstItem="Pcu-cc-FVh" firstAttribute="top" secondItem="GfL-PL-TmH" secondAttribute="bottom" constant="15" id="Bya-Sp-ik8"/>
+                            <constraint firstItem="mId-8L-hKj" firstAttribute="trailing" secondItem="GfL-PL-TmH" secondAttribute="trailing" constant="25" id="KUN-95-uQ6"/>
+                            <constraint firstItem="GfL-PL-TmH" firstAttribute="leading" secondItem="cQ0-d2-CIk" secondAttribute="trailing" constant="50" id="QGY-Vq-LNM"/>
+                            <constraint firstItem="GfL-PL-TmH" firstAttribute="top" secondItem="mId-8L-hKj" secondAttribute="top" constant="25" id="diy-Sw-IUg"/>
+                            <constraint firstItem="GfL-PL-TmH" firstAttribute="leading" secondItem="mId-8L-hKj" secondAttribute="leading" constant="25" id="hRF-qM-fOi"/>
+                            <constraint firstItem="mId-8L-hKj" firstAttribute="trailing" secondItem="Pcu-cc-FVh" secondAttribute="trailing" constant="25" id="oZL-ed-P6g"/>
+                            <constraint firstItem="bBy-pX-DNB" firstAttribute="leading" secondItem="GfL-PL-TmH" secondAttribute="trailing" constant="50" id="w7U-7j-Rd2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="reminderDateLabel" destination="Pcu-cc-FVh" id="9l8-IY-8or"/>
+                        <outlet property="reminderImageView" destination="E7D-Hi-JWw" id="kgJ-rA-UKg"/>
+                        <outlet property="reminderTextLabel" destination="GfL-PL-TmH" id="ses-iI-pYZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aBO-UJ-QoG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2511.594202898551" y="93.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dQC-pX-O6L">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qYQ-12-JRN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="N9Q-Uz-ptM">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                            <color key="textColor" systemColor="labelColor"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="b2l-aX-K0m"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bg6-nL-a6V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-197.10144927536234" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cube.fill" catalog="system" width="128" height="124"/>
+        <image name="cursorarrow.click.2" catalog="system" width="128" height="124"/>
+        <image name="plus.message.fill" catalog="system" width="128" height="113"/>
+        <image name="square.and.pencil" catalog="system" width="128" height="115"/>
+        <image name="wand.and.stars" catalog="system" width="128" height="113"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

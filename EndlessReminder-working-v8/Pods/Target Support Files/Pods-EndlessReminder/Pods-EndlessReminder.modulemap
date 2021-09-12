@@ -1,0 +1,6 @@
+framework module Pods_EndlessReminder {
+  umbrella header "Pods-EndlessReminder-umbrella.h"
+
+  export *
+  module * { export * }
+}
